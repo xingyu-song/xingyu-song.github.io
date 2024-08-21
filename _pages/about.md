@@ -35,8 +35,21 @@ My research interest includes neural machine translation and computer vision. I 
 
 **Xingyu Song**, Zhan Li, Shi Chen, Xin-Qiang Cai, Kazuyuki Demachi
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[**Project**](https://github.com/xingyu-song/4A) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- The 4A (Action Animation-based Augmentation Approach) pipeline enhances action recognition by utilizing animated pose data generated through a combination of 2D pose estimation, Quaternion-based GCN, and Dynamic Skeletal Interpolation, effectively bridging the gap between virtual and real-world data and achieving superior performance with significantly less data.
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECAI 2024</div><img src='images/q_gcn.pdf' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Quater-GCN: Enhancing 3D Human Pose Estimation with Orientation and Semi-supervised Training](https://arxiv.org/abs/2404.19279)
+
+**Xingyu Song**, Zhan Li, Shi Chen, Kazuyuki Demachi
+
+[**Project**](https://github.com/xingyu-song/q_gcn) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Quater-GCN (Q-GCN) enhances 3D human pose estimation by incorporating both joint spatial dependencies and bone orientation, using a directed graph convolutional network and a semi-supervised training strategy, resulting in superior performance compared to existing methods.
 </div>
 </div>
 
