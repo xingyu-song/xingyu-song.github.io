@@ -36,7 +36,7 @@ My research interest includes neural machine translation and computer vision. I 
 **Xingyu Song**, Zhan Li, Shi Chen, Xin-Qiang Cai, Kazuyuki Demachi
 
 [**Project**](https://github.com/xingyu-song/4A) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- The 4A (Action Animation-based Augmentation Approach) pipeline enhances action recognition by utilizing animated pose data generated through a combination of 2D pose estimation, Quaternion-based GCN, and Dynamic Skeletal Interpolation, effectively bridging the gap between virtual and real-world data and achieving superior performance with significantly less data.
+- 4A (Action Animation-based Augmentation Approach) is a pipeline that enhances action recognition by generating animated pose data through 2D pose estimation, Quaternion-based GCN, and Dynamic Skeletal Interpolation, which effectively bridging the gap between virtual and real-world data and achieving superior performance with significantly less data.
 </div>
 </div>
 
@@ -49,11 +49,23 @@ My research interest includes neural machine translation and computer vision. I 
 **Xingyu Song**, Zhan Li, Shi Chen, Kazuyuki Demachi
 
 [**Project**](https://github.com/xingyu-song/q_gcn) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Quater-GCN (Q-GCN) enhances 3D human pose estimation by incorporating both joint spatial dependencies and bone orientation, using a directed graph convolutional network and a semi-supervised training strategy, resulting in superior performance compared to existing methods.
+- Quater-GCN (Q-GCN) is a deep learning model that enhances 3D human pose estimation by incorporating both joint spatial dependencies and bone orientation, utilizing a directed graph convolutional network and a semi-supervised training strategy, resulting in superior performance compared to existing methods.
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+- [Data, language and graph-based reasoning methods for identification of human malicious behaviors in nuclear security]([https://github.com](https://www.sciencedirect.com/science/article/pii/S0957417423018699)), Zhan Li, **Xingyu Song**, Shi Chen, Kazuyuki Demachi, **Expert Systems with Applications**
+
+- [Game Engine Based Data Augmentation with In-game Customization and Modeling for Malicious Behaviors Identification in Nuclear Security](https://resources.inmm.org/sites/default/files/2023-07/finalpaper_223_0418062326.pdf), **Xingyu Song**, Zhan Li, Shi Chen, Kazuyuki Demachi, **INMM/ESARDA 2023 Joint Annual Meeting**
+
+- [Abnormal Detection in Nuclear Security Videos Based on Label-Specific Autoencoders and Reconstruction Errors Comparison](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641399), Zhan Li, **Xingyu Song**, Shi Chen, Kazuyuki Demachi, **SSRN Preprint**
+
+- [GTAutoAct: An Automatic Datasets Generation Framework Based on Game Engine Redevelopment for Action Recognition](https://arxiv.org/abs/2401.13414), **Xingyu Song**, Zhan Li, Shi Chen, Kazuyuki Demachi, **arXiv Preprint**
+
+- [Armed Boundary Sabotage: A Case Study of Human Malicious Behaviors Identification with Computer Vision and Explainable Reasoning Methods](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4750342), Zhan Li, **Xingyu Song**, Shi Chen, Kazuyuki Demachi, **SSRN Preprint**
+
+- [Malicious behaviors identification in nuclear security based on visual relationships extraction and knowledge reasoning](https://resources.inmm.org/sites/default/files/2023-07/finalpaper_220_0425010228.pdf), Zhan Li, **Xingyu Song**, Shi Chen, Kazuyuki Demachi, **INMM/ESARDA 2023 Joint Annual Meeting**
+
+- [Advancement and Development of Graph-Based Reasoning Method for Human Malicious Behaviors Identification Based on Graph Contrastive Representation Learning](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798853), Zhan Li, **Xingyu Song**, Shi Chen, Kazuyuki Demachi, **SSRN Preprint**
 
 # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
