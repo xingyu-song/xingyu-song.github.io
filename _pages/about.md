@@ -17,7 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-In progressing...
+I am currently a research assistant at the Graduate School of Engineering, University of Tokyo. My research focuses on computer vision, deep learning, and graph neural networks, particularly in the context of human motion understanding and representation. I am actively seeking PhD opportunities.
+
+Feel free to contact me if you would like more information or access to the code related to my work.
 
 # 📝 Publications 
 
