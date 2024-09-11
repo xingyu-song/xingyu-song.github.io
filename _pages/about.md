@@ -65,4 +65,4 @@ Feel free to contact me if you would like more information or access to the code
 # 📖 Educations
 - *2022.04 - 2024.03*, M.Sc., Graduate School of Engineering, The University of Tokyo. 
 - *2021.10 - 2022.03*, Research Student, School of Fundamental Science and Engineering, Waseda University.
-- *2017.09 - 2021.07*, B.Sc., College of Hongshen/College of Computer Science, Chongqing University College of Computer Science.
+- *2017.09 - 2021.07*, B.Sc., College of Hongshen/College of Computer Science, Chongqing University.
