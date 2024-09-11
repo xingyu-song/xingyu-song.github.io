@@ -60,9 +60,6 @@ In progressing...
 
 - [Advancement and Development of Graph-Based Reasoning Method for Human Malicious Behaviors Identification Based on Graph Contrastive Representation Learning](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798853), Zhan Li, **Xingyu Song**, Shi Chen, Kazuyuki Demachi, **SSRN Preprint**
 
-# 🎖 Honors and Awards
-- All honors and awards will be issued in the future. 
-
 # 📖 Educations
 - *2022.04 - 2024.03*, M.Sc., Graduate School of Engineering, The University of Tokyo. 
 - *2021.10 - 2022.03*, Research Student, School of Fundamental Science and Engineering, Waseda University.
