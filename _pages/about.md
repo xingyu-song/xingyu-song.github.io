@@ -23,7 +23,7 @@ Feel free to contact me if you would like more information or access to the code
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECAI 2024</div><img src='images/pipeline.pdf' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECAI 2024 (Oral)</div><img src='images/pipeline.pdf' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An Animation-based Augmentation Approach for Action Recognition from Discontinuous Video](https://arxiv.org/abs/2404.06741)
@@ -36,7 +36,7 @@ Feel free to contact me if you would like more information or access to the code
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECAI 2024</div><img src='images/q_gcn.pdf' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECAI 2024 (Oral)</div><img src='images/q_gcn.pdf' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Quater-GCN: Enhancing 3D Human Pose Estimation with Orientation and Semi-supervised Training](https://arxiv.org/abs/2404.19279)
