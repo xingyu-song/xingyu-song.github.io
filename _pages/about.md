@@ -28,7 +28,7 @@ Feel free to contact me if you would like more information or access to the code
 
 [An Animation-based Augmentation Approach for Action Recognition from Discontinuous Video](https://arxiv.org/abs/2404.06741)
 
-**Xingyu Song**, Zhan Li, Shi Chen, Xin-Qiang Cai, Kazuyuki Demachi
+**Xingyu Song**, Zhan Li, Shi Chen, Xin-Qiang Cai, Kazuyuki Demachi, In: Proceedings of the 27th European Conference on Artificial Intelligence (ECAI’24), Santiago de Compostela, Spain, Oct. 19-24, 2024 (Oral)
 
 [**Project**](https://github.com/xingyu-song/4A) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - 4A (Action Animation-based Augmentation Approach) is a pipeline that enhances action recognition by generating animated pose data through 2D pose estimation, Quaternion-based GCN, and Dynamic Skeletal Interpolation, which effectively bridging the gap between virtual and real-world data and achieving superior performance with significantly less data.
@@ -41,7 +41,7 @@ Feel free to contact me if you would like more information or access to the code
 
 [Quater-GCN: Enhancing 3D Human Pose Estimation with Orientation and Semi-supervised Training](https://arxiv.org/abs/2404.19279)
 
-**Xingyu Song**, Zhan Li, Shi Chen, Kazuyuki Demachi
+**Xingyu Song**, Zhan Li, Shi Chen, Kazuyuki Demachi, In: Proceedings of the 27th European Conference on Artificial Intelligence (ECAI’24), Santiago de Compostela, Spain, Oct. 19-24, 2024 (Oral)
 
 [**Project**](https://github.com/xingyu-song/q_gcn) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Quater-GCN (Q-GCN) is a deep learning model that enhances 3D human pose estimation by incorporating both joint spatial dependencies and bone orientation, utilizing a directed graph convolutional network and a semi-supervised training strategy, resulting in superior performance compared to existing methods.
