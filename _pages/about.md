@@ -17,6 +17,8 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
+# 🌟 About Me
+
 I am currently a research assistant at the Graduate School of Engineering, University of Tokyo. My research focuses on computer vision, deep learning, and graph neural networks, particularly in the context of human motion understanding and representation. I am actively seeking PhD opportunities.
 
 Feel free to contact me if you would like more information or access to the code related to my work.
@@ -66,3 +68,11 @@ Feel free to contact me if you would like more information or access to the code
 - *2022.04 - 2024.03*, M.Sc., Graduate School of Engineering, The University of Tokyo. 
 - *2021.10 - 2022.03*, Research Student, School of Fundamental Science and Engineering, Waseda University.
 - *2017.09 - 2021.07*, B.Sc., College of Hongshen/College of Computer Science, Chongqing University.
+
+
+# 💼 Interships
+- *2020.06 – 2020.08* Sichuan Hwadee Information Technology Co., Ltd, Chengdu, China. Development of the big data information integration analysis platform
+- *2019.01 – 2019.03* National key laboratory of Software Development Environment, Beihang University, Beijing, China.\\
+                      Data standard modeling and environment verification.\\
+                      Supervised by Prof. Zhiming Zheng.\\
+- *2018.07 – 2018.09* ChinaSoft International, Chongqing, China Development of the campus forum CQUHub
