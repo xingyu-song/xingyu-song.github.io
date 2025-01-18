@@ -74,10 +74,6 @@ Feel free to contact me if you would like more information or access to the code
 - *2017.09 - 2021.07*, B.Sc., College of Hongshen/College of Computer Science, Chongqing University.
 
 # 💼 Internships
-- *2020.06 – 2020.08* **Sichuan Hwadee Information Technology Co., Ltd**, Chengdu, China. \\
-&nbsp;&nbsp;&nbsp;&nbsp;Development of the big data information integration analysis platform
-- *2019.01 – 2019.03* **National key laboratory of Software Development Environment**, Beihang University, Beijing, China.\\
-                      Data standard modeling and environment verification.\\
-                      Supervised by Prof. Zhiming Zheng.\\
-- *2018.07 – 2018.09* **ChinaSoft International**, Chongqing, China
-- - Development of the campus forum CQUHub
+- *2020.06 – 2020.08*, **Sichuan Hwadee Information Technology Co., Ltd**, Chengdu, China.
+- *2019.01 – 2019.03*, **National key laboratory of Software Development Environment**, Beihang University, Beijing, China. Supervised by Prof. Zhiming Zheng.
+- *2018.07 – 2018.09*, **ChinaSoft International**, Chongqing, China. [CQUHub](https://github.com/CQU-AI/CQUHub?tab=readme-ov-file)
