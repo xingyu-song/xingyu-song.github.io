@@ -64,7 +64,7 @@ Feel free to contact me if you would like more information or access to the code
 
 - [Armed Boundary Sabotage: A Case Study of Human Malicious Behaviors Identification with Computer Vision and Explainable Reasoning Methods](https://www.sciencedirect.com/science/article/pii/S0045790624008504), Zhan Li, **Xingyu Song**, Shi Chen, Kazuyuki Demachi, **Computers and Electrical Engineering**, Vol.121, 109924.
 
-- [Malicious behaviors identification in nuclear security based on visual relationships extraction and knowledge reasoning](https://resources.inmm.org/sites/default/files/2023-07/finalpaper_220_0425010228.pdf), Zhan Li, **Xingyu Song**, Shi Chen, Kazuyuki Demachi, **INMM/ESARDA 2023 Joint Annual Meeting**
+- [Malicious behaviors identification in nuclear security based on visual relationships extraction and knowledge reasoning](https://resources.inmm.org/sites/default/files/2023-07/finalpaper_220_0425010228.pdf), Zhan Li, **Xingyu Song**, Shi Chen, Kazuyuki Demachi, **INMM/ESARDA 2023 Joint Annual Meeting**.
 
 - [Advancement and Development of Graph-Based Reasoning Method for Human Malicious Behaviors Identification Based on Graph Contrastive Representation Learning](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798853), Zhan Li, **Xingyu Song**, Shi Chen, Kazuyuki Demachi, **Neurocomputing** (Under review).
 
@@ -72,6 +72,9 @@ Feel free to contact me if you would like more information or access to the code
 - *2022.04 - 2024.03*, M.Sc., Graduate School of Engineering, The University of Tokyo. 
 - *2021.10 - 2022.03*, Research Student, School of Fundamental Science and Engineering, Waseda University.
 - *2017.09 - 2021.07*, B.Sc., College of Hongshen/College of Computer Science, Chongqing University.
+
+# 🏆 Honors and Awards
+- *2024*，*SPRING GX Fellowship*, The University of Tokyo.
 
 # 💼 Internships
 - *2020.06 – 2020.08*, **Sichuan Hwadee Information Technology Co., Ltd**, Chengdu, China.
