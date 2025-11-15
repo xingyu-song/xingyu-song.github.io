@@ -23,7 +23,7 @@ Whassup!
 
 I’m a first-year PhD student at the RCAST AI Lab, Department of Advanced Interdisciplinary Studies, Graduate School of Engineering, The University of Tokyo, supervised by Prof. Naoya Takeishi and Prof. Takehisa Yairi.
 
-My research explores **flow-based generative models**—how probability flows can generate the world we imagine. Recently, I’ve been drawn to the linearization of generative models, as it reflects the ultimate beauty and philosophy of computer science and AI: simplicity that hides subtle complexity.
+My research explores **flow-based generative models**—how probability flows can generate the world we imagine. Recently, I’ve been drawn to the **linearization** of generative models, as it reflects the ultimate beauty and philosophy of computer science and AI: simplicity that hides subtle complexity.
 
 Feel free to reach out if you’d like to chat about generative modeling, collaborate, or simply want access to my code before it generates consciousness.
 
