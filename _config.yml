@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Xingyu SONG"
-description              : "Welcome! "
+description              : "A PhD student."
 repository               : "xingyu-song/xingyu-song.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -28,7 +28,7 @@ author:
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
-  email            : "songxingyu0429@gmail.com"
+  email            : "xsong@g.ecc.u-tokyo.ac.jp"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
