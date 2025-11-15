@@ -19,18 +19,16 @@ redirect_from:
 
 # 🌟 About Me
 
-**Whassup!**
+Whassup!
 I’m a first-year PhD student at the RCAST AI Lab, Department of Advanced Interdisciplinary Studies, Graduate School of Engineering, The University of Tokyo, supervised by Prof. Naoya Takeishi and Prof. Takehisa Yairi.
 
-My research explores flow-based generative models—how probability flows can generate the world we imagine. Recently, I’ve been drawn to the linearization of generative models, as it reflects the ultimate beauty and philosophy of computer science and AI: simplicity that hides subtle complexity.
+My research explores **flow-based generative models**—how probability flows can generate the world we imagine. Recently, I’ve been drawn to the linearization of generative models, as it reflects the ultimate beauty and philosophy of computer science and AI: simplicity that hides subtle complexity.
 
 Feel free to reach out if you’d like to chat about generative modeling, collaborate, or simply want access to my code before it generates consciousness.
 
 # 📝 Publications 
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECAI 2024 (Oral)</div><img src='images/pipeline.pdf' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+- [ReAgent: Reversible Multi-Agent Reasoning for Knowledge-Enhanced Multi-Hop QA](https://aclanthology.org/2025.emnlp-main.202.pdf), Zhao Xinjie, Fan Gao, **Xingyu Song**, Yingjian Chen, Rui Yang, Yanran Fu, Yuyang Wang, Yusuke Iwasawa, Yutaka Matsuo, Irene Li, **Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing**.
 
 - [4A: An Animation-based Augmentation Approach for Action Recognition from Discontinuous Video](https://arxiv.org/abs/2404.06741), **Xingyu Song**, Zhan Li, Shi Chen, Xin-Qiang Cai, Kazuyuki Demachi, **Proceedings of the 27th European Conference on Artificial Intelligence (ECAI’24)**, Santiago de Compostela, Spain, Oct. 19-24, 2024 (Oral).
 
