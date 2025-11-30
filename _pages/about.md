@@ -29,7 +29,7 @@ Feel free to reach out if you’d like to chat about generative modeling, collab
 
 # 📝 Publications 
 
-- [ReAgent: Reversible Multi-Agent Reasoning for Knowledge-Enhanced Multi-Hop QA](https://aclanthology.org/2025.emnlp-main.202.pdf), Zhao Xinjie, Fan Gao, **Xingyu Song**, Yingjian Chen, Rui Yang, Yanran Fu, Yuyang Wang, Yusuke Iwasawa, Yutaka Matsuo, Irene Li, **Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP)**.
+- [ReAgent: Reversible Multi-Agent Reasoning for Knowledge-Enhanced Multi-Hop QA](https://aclanthology.org/2025.emnlp-main.202.pdf), Zhao Xinjie*, Fan Gao*, **Xingyu Song**, Yingjian Chen, Rui Yang, Yanran Fu, Yuyang Wang, Yusuke Iwasawa, Yutaka Matsuo, Irene Li, **Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP)**.
 
 - [4A: An Animation-based Augmentation Approach for Action Recognition from Discontinuous Video](https://arxiv.org/abs/2404.06741), **Xingyu Song**, Zhan Li, Shi Chen, Xin-Qiang Cai, Kazuyuki Demachi, **Proceedings of the 27th European Conference on Artificial Intelligence (ECAI’24)**, Santiago de Compostela, Spain, Oct. 19-24, 2024 (Oral).
 
