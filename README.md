@@ -6,18 +6,24 @@ https://xingyu-song.github.io
 
 It is a lightweight static website built with plain HTML, CSS, and JavaScript. The site is designed for academic profiles: research summary, publications, education, experience, contact links, and a downloadable CV.
 
+## Design
+
+The design uses a warm paper background, serif headings and publication titles, system sans-serif text, and a single rust accent. Open lists and thin rules keep attention on the research rather than decorative panels. All fonts are local system fonts; there are no font downloads, dependencies, or build tools.
+
+Navigation stays visible at every screen size and works without JavaScript. Email remains readable without JavaScript; browsers with clipboard support also show a copy button with visible, screen-reader-announced feedback. Keyboard focus, a skip link, reserved image dimensions, and print styles are included. No motion or animation is required.
+
 ## Layout Credit
 
-The homepage layout is based on [RayeRen/acad-homepage.github.io](https://github.com/RayeRen/acad-homepage.github.io). If you reuse or adapt this repository, please keep appropriate credit to the original layout source.
+The previous homepage layout was based on [RayeRen/acad-homepage.github.io](https://github.com/RayeRen/acad-homepage.github.io). If you reuse or adapt this repository, please keep appropriate credit to the original layout source.
 
 ## Features
 
 - Single-page academic homepage
-- Responsive layout for desktop and mobile
+- Responsive layout with always-visible navigation for desktop and mobile
 - Publication sections grouped by research area
 - Highlighted author name in publication lists
 - Downloadable CV PDF
-- Email copy interaction without exposing a raw `mailto:` link
+- Readable email address with progressive-enhancement copy interaction
 - GitHub Pages deployment with no build step
 
 ## Repository Structure
@@ -26,7 +32,7 @@ The homepage layout is based on [RayeRen/acad-homepage.github.io](https://github
 .
 ├── index.html                  # Homepage content
 ├── styles.css                  # Visual design and responsive layout
-├── script.js                   # Mobile navigation and email-copy behavior
+├── script.js                   # Email-copy feedback and footer year
 ├── files/
 │   └── Xingyu_Song_CV.pdf      # CV PDF linked from the homepage
 └── .nojekyll                   # Tells GitHub Pages to serve files directly
@@ -62,7 +68,7 @@ http://localhost:4173
 
 ## Customization Notes
 
-- Edit colors and spacing in `styles.css`.
+- Edit colors and spacing in `styles.css`; palette tokens are in `:root`.
 - Update publications directly in the `#publications` section of `index.html`.
 - Keep the email split across `data-user` and `data-domain` if you want to avoid putting a raw email address in the HTML.
 - Replace the profile image source in `index.html` if you prefer a local image file.
@@ -73,4 +79,4 @@ This repository uses GitHub Pages for deployment. No package installation or bui
 
 ## License And Attribution
 
-This repository is intended as a reusable academic homepage template. The layout is based on [RayeRen/acad-homepage.github.io](https://github.com/RayeRen/acad-homepage.github.io). Before reusing, check the original repository's license and keep attribution where appropriate.
+This repository is intended as a reusable academic homepage template. The original layout was based on [RayeRen/acad-homepage.github.io](https://github.com/RayeRen/acad-homepage.github.io). Before reusing, check the original repository's license and keep attribution where appropriate.

@@ -1,74 +1,16 @@
-const navToggle = document.querySelector(".nav-toggle");
-const nav = document.querySelector(".site-nav");
+document.querySelector("#year").textContent = String(new Date().getFullYear());
 
-navToggle?.addEventListener("click", () => {
-  const isOpen = nav?.classList.toggle("is-open") ?? false;
-  navToggle.setAttribute("aria-expanded", String(isOpen));
-});
+const copyButton = document.querySelector("#copy-email");
+const copyStatus = document.querySelector("#copy-status");
 
-nav?.addEventListener("click", (event) => {
-  if (event.target instanceof HTMLAnchorElement) {
-    nav.classList.remove("is-open");
-    navToggle?.setAttribute("aria-expanded", "false");
-  }
-});
-
-const year = document.querySelector("#year");
-if (year) {
-  year.textContent = String(new Date().getFullYear());
-}
-
-const getEmail = (element) => `${element.dataset.user}@${element.dataset.domain}`;
-
-const copyText = async (text) => {
-  const browserNavigator = window.navigator || {};
-
-  if (browserNavigator.clipboard?.writeText) {
-    await browserNavigator.clipboard.writeText(text);
-    return;
-  }
-
-  const field = document.createElement("textarea");
-  field.value = text;
-  field.setAttribute("readonly", "");
-  field.style.position = "fixed";
-  field.style.left = "-9999px";
-  document.body.append(field);
-  field.select();
-  const copied = document.execCommand("copy");
-  field.remove();
-
-  if (!copied) {
-    throw new Error("Copy failed");
-  }
-};
-
-document.querySelectorAll(".email-copy, .contact-copy").forEach((button) => {
-  const status = button.querySelector("small");
-  const originalText = button.textContent.trim();
-  const setButtonText = (text) => {
-    if (button.classList.contains("email-copy")) {
-      button.textContent = text;
-    }
-  };
-
-  button.addEventListener("click", async () => {
-    const email = getEmail(button);
-    const showStatus = (text) => {
-      if (status) status.textContent = text;
-      setButtonText(text);
-    };
-
+if (navigator.clipboard?.writeText) {
+  copyButton.hidden = false;
+  copyButton.addEventListener("click", async () => {
     try {
-      await copyText(email);
-      showStatus("Copied");
+      await navigator.clipboard.writeText(`${copyButton.dataset.user}@${copyButton.dataset.domain}`);
+      copyStatus.textContent = "Email address copied.";
     } catch {
-      showStatus("Copy blocked");
+      copyStatus.textContent = "Copy unavailable. Select the address above and replace [at] with @.";
     }
-
-    window.setTimeout(() => {
-      showStatus("Copy");
-      setButtonText(originalText);
-    }, 1800);
   });
-});
+}
