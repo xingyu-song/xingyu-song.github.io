@@ -90,21 +90,8 @@ h1 { margin-bottom: 25px; font-size: clamp(3.5rem, 7.7vw, 6.8rem); line-height: 
 .button.primary span { color: #fff; }
 .button.primary:hover { background: var(--accent); }
 .profile-panel { align-self: center; }
-.portrait-wrap {
-  position: relative;
-  aspect-ratio: 1;
-  overflow: hidden;
-  border-radius: 3px;
-  background: var(--paper);
-}
-.portrait { display: block; width: 100%; height: 100%; border-radius: 3px; object-fit: cover; }
-.portrait-wrap::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  box-shadow: inset 0 0 18px 8px var(--paper);
-}
+.portrait-wrap { aspect-ratio: 1; overflow: hidden; border-radius: 3px; background: #e8e8e3; }
+.portrait { display: block; width: 100%; height: 100%; object-fit: cover; }
 .profile-panel p { margin: 9px 0 0; color: var(--muted); font-size: 0.72rem; line-height: 1.65; }
 .profile-panel .profile-label { margin-top: 20px; color: var(--ink); font-size: 0.8rem; font-weight: 500; }
 .section { padding: 78px 0 86px; border-top: 1px solid var(--line); }
@@ -190,7 +177,6 @@ h1 { margin-bottom: 25px; font-size: clamp(3.5rem, 7.7vw, 6.8rem); line-height: 
   h1 { font-size: clamp(3.1rem, 12vw, 4.2rem); }
   .hero-lede { max-width: 360px; }
   .profile-panel { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 20px; align-items: center; }
-  .portrait-wrap::after { box-shadow: inset 0 0 10px 4px var(--paper); }
   .profile-panel .profile-label { margin-top: 0; }
   .profile-panel p { font-size: 0.68rem; }
   .section-heading.split { display: block; }
