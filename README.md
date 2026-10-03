@@ -15,7 +15,7 @@ The homepage layout is based on [RayeRen/acad-homepage.github.io](https://github
 - Single-page academic homepage
 - Swiss-inspired editorial grid, neutral colors, fine rules, and system typography
 - Responsive layout for desktop and mobile
-- Publication sections grouped by research area
+- Single publication list ordered newest year first
 - Separate publication years, author lists, and venue information
 - Highlighted author name in publication lists
 - Downloadable CV PDF
@@ -70,7 +70,7 @@ http://localhost:4173
 
 - Edit the color variables and spacing in `styles.css`. Typography uses local system fonts with no external font requests.
 - Update publications directly in the `#publications` section of `index.html`.
-- Keep the year, authors, venue, and optional summary in their corresponding publication elements; order entries newest first within each research area.
+- Keep the year, authors, venue, and optional summary in their corresponding publication elements; order entries newest year first.
 - Keep the email split across `data-user` and `data-domain` if you want to avoid putting a raw email address in the HTML.
 - Replace `images/xingyu-song.jpg` with your portrait and update its alt text in `index.html`.
 
