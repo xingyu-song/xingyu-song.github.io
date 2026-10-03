@@ -127,8 +127,6 @@ h1 { margin-bottom: 25px; font-size: clamp(3.5rem, 7.7vw, 6.8rem); line-height: 
 .contact-band h2 { font-size: clamp(2.5rem, 4.4vw, 4rem); }
 .contact-intro { margin: 22px 0 0; max-width: 340px; color: var(--muted); font-size: 0.9rem; }
 .contact-links { display: flex; flex-wrap: wrap; align-content: center; gap: 12px 26px; }
-.contact-links > a { display: inline-flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 44px; color: var(--muted); font-size: 0.8rem; text-decoration: none; }
-.contact-links > a:hover { color: var(--accent); }
 .contact-copy { display: flex; align-items: center; justify-content: space-between; gap: 20px; width: 100%; min-height: 56px; padding: 0 0 10px; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); text-align: left; cursor: pointer; }
 .contact-copy > span { overflow-wrap: anywhere; font-size: clamp(0.9rem, 1.3vw, 1.1rem); letter-spacing: -0.025em; }
 .contact-copy small { flex-shrink: 0; color: var(--muted); font-size: 0.7rem; }
