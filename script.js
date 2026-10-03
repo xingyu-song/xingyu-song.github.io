@@ -52,7 +52,7 @@ const copyText = async (text) => {
 
 const copyStatus = document.querySelector(".copy-status");
 let statusTimeout;
-document.querySelectorAll(".email-copy, .contact-copy").forEach((button) => {
+document.querySelectorAll(".contact-copy").forEach((button) => {
   button.hidden = false;
   button.addEventListener("click", async () => {
     const email = `${button.dataset.user}@${button.dataset.domain}`;
