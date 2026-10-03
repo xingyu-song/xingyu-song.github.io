@@ -98,11 +98,6 @@ h1 { margin-bottom: 25px; font-size: clamp(3.5rem, 7.7vw, 6.8rem); line-height: 
 .section-heading.split { display: flex; align-items: end; justify-content: space-between; gap: 30px; }
 .text-link { display: inline-flex; align-items: center; gap: 20px; min-height: 44px; font-size: 0.8rem; text-decoration: none; white-space: nowrap; }
 .text-link:hover { text-decoration: underline; }
-.focus-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 42px; }
-.focus-card { padding-top: 19px; border-top: 1px solid var(--line); }
-.focus-card > span { color: var(--muted); font-size: 0.7rem; font-variant-numeric: tabular-nums; }
-.focus-card h3 { margin: 27px 0 14px; letter-spacing: -0.025em; }
-.focus-card p { margin-bottom: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.8; }
 .publication-group { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.65fr); gap: 90px; margin-top: 52px; }
 .publication-group > h3 { max-width: 240px; margin-bottom: 0; padding-top: 24px; border-top: 1px solid var(--ink); font-size: 0.95rem; letter-spacing: -0.015em; }
 .publication-list { padding: 0; margin: 0; list-style: none; }
@@ -140,7 +135,6 @@ h1 { margin-bottom: 25px; font-size: clamp(3.5rem, 7.7vw, 6.8rem); line-height: 
   .hero { grid-template-columns: minmax(0, 1fr) 220px; gap: 45px; padding-block: 80px; }
   .two-column, .resume-grid, .publication-group { gap: 50px; }
   .site-nav { gap: 20px; }
-  .focus-grid { gap: 28px; }
   .contact-band { gap: 50px; }
 }
 @media (max-width: 760px) {
@@ -171,8 +165,6 @@ h1 { margin-bottom: 25px; font-size: clamp(3.5rem, 7.7vw, 6.8rem); line-height: 
   .profile-panel { width: 100px; }
   .section-heading.split { display: block; }
   .section-heading.split .text-link { margin-top: 18px; }
-  .focus-grid { grid-template-columns: 1fr; gap: 30px; }
-  .focus-card h3 { margin-top: 15px; }
   .publication-list li { grid-template-columns: 1fr; gap: 10px; }
   .publication-content h4 { font-size: 1.02rem; }
   .timeline li { grid-template-columns: 1fr; gap: 5px; }
