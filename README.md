@@ -13,11 +13,15 @@ The homepage layout is based on [RayeRen/acad-homepage.github.io](https://github
 ## Features
 
 - Single-page academic homepage
+- Swiss-inspired editorial grid, neutral colors, fine rules, and system typography
 - Responsive layout for desktop and mobile
-- Publication sections grouped by research area
+- Single publication list ordered newest year first
+- Separate publication years, author lists, and venue information
 - Highlighted author name in publication lists
 - Downloadable CV PDF
 - Email copy interaction without exposing a raw `mailto:` link
+- Keyboard-accessible mobile navigation, skip link, and reduced-motion support
+- Navigation and contact details remain available without JavaScript
 - GitHub Pages deployment with no build step
 
 ## Repository Structure
@@ -27,6 +31,8 @@ The homepage layout is based on [RayeRen/acad-homepage.github.io](https://github
 ├── index.html                  # Homepage content
 ├── styles.css                  # Visual design and responsive layout
 ├── script.js                   # Mobile navigation and email-copy behavior
+├── images/
+│   └── xingyu-song.jpg         # Local profile portrait
 ├── files/
 │   └── Xingyu_Song_CV.pdf      # CV PDF linked from the homepage
 └── .nojekyll                   # Tells GitHub Pages to serve files directly
@@ -62,10 +68,11 @@ http://localhost:4173
 
 ## Customization Notes
 
-- Edit colors and spacing in `styles.css`.
+- Edit the color variables and spacing in `styles.css`. Typography uses local system fonts with no external font requests.
 - Update publications directly in the `#publications` section of `index.html`.
+- Keep the year, authors, venue, and optional summary in their corresponding publication elements; order entries newest year first.
 - Keep the email split across `data-user` and `data-domain` if you want to avoid putting a raw email address in the HTML.
-- Replace the profile image source in `index.html` if you prefer a local image file.
+- Replace `images/xingyu-song.jpg` with your portrait and update its alt text in `index.html`.
 
 ## Deployment
 

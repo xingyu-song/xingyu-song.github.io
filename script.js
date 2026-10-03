@@ -1,34 +1,56 @@
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".site-nav");
 
-navToggle?.addEventListener("click", () => {
-  const isOpen = nav?.classList.toggle("is-open") ?? false;
-  navToggle.setAttribute("aria-expanded", String(isOpen));
-});
+const closeNav = () => {
+  nav?.classList.remove("is-open");
+  navToggle?.setAttribute("aria-expanded", "false");
+};
 
-nav?.addEventListener("click", (event) => {
-  if (event.target instanceof HTMLAnchorElement) {
-    nav.classList.remove("is-open");
-    navToggle?.setAttribute("aria-expanded", "false");
-  }
-});
-
-const year = document.querySelector("#year");
-if (year) {
-  year.textContent = String(new Date().getFullYear());
+if (navToggle && nav) {
+  document.documentElement.classList.add("nav-ready");
+  navToggle.hidden = false;
+  navToggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+  nav.addEventListener("click", (event) => {
+    if (event.target instanceof HTMLAnchorElement) closeNav();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && nav.classList.contains("is-open")) {
+      closeNav();
+      navToggle.focus();
+    }
+  });
 }
 
-const getEmail = (element) => `${element.dataset.user}@${element.dataset.domain}`;
+const year = document.querySelector("#year");
+if (year) year.textContent = String(new Date().getFullYear());
+
+const publicationToggle = document.querySelector(".publication-toggle");
+const publicationList = document.querySelector("#publication-list");
+if (publicationToggle && publicationList) {
+  publicationToggle.hidden = false;
+  publicationToggle.addEventListener("click", () => {
+    publicationList.hidden = !publicationList.hidden;
+    const expanded = !publicationList.hidden;
+    publicationToggle.setAttribute("aria-expanded", String(expanded));
+    publicationToggle.firstChild.textContent = expanded ? "Hide publications " : "Show publications ";
+    publicationToggle.querySelector("span").textContent = expanded ? "−" : "+";
+  });
+}
 
 const copyText = async (text) => {
-  const browserNavigator = window.navigator || {};
-
-  if (browserNavigator.clipboard?.writeText) {
-    await browserNavigator.clipboard.writeText(text);
-    return;
+  if (navigator.clipboard?.writeText) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return;
+    } catch {
+      // Some browsers deny clipboard access; try the selection fallback.
+    }
   }
-
   const field = document.createElement("textarea");
+  const focusedElement = document.activeElement;
   field.value = text;
   field.setAttribute("readonly", "");
   field.style.position = "fixed";
@@ -37,38 +59,23 @@ const copyText = async (text) => {
   field.select();
   const copied = document.execCommand("copy");
   field.remove();
-
-  if (!copied) {
-    throw new Error("Copy failed");
-  }
+  focusedElement?.focus();
+  if (!copied) throw new Error("Copy failed");
 };
 
-document.querySelectorAll(".email-copy, .contact-copy").forEach((button) => {
-  const status = button.querySelector("small");
-  const originalText = button.textContent.trim();
-  const setButtonText = (text) => {
-    if (button.classList.contains("email-copy")) {
-      button.textContent = text;
-    }
-  };
-
+const copyStatus = document.querySelector(".copy-status");
+let statusTimeout;
+document.querySelectorAll(".contact-copy").forEach((button) => {
+  button.hidden = false;
   button.addEventListener("click", async () => {
-    const email = getEmail(button);
-    const showStatus = (text) => {
-      if (status) status.textContent = text;
-      setButtonText(text);
-    };
-
+    const email = `${button.dataset.user}@${button.dataset.domain}`;
     try {
       await copyText(email);
-      showStatus("Copied");
+      copyStatus.textContent = "Email address copied.";
     } catch {
-      showStatus("Copy blocked");
+      copyStatus.textContent = `Could not copy. Email: ${email}`;
     }
-
-    window.setTimeout(() => {
-      showStatus("Copy");
-      setButtonText(originalText);
-    }, 1800);
+    window.clearTimeout(statusTimeout);
+    statusTimeout = window.setTimeout(() => { copyStatus.textContent = ""; }, 5000);
   });
 });

@@ -5,62 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Academic homepage of Xingyu Song, PhD student at The University of Tokyo working on generative modeling, probability flows, and AI.">
     <title>Xingyu Song | Academic Homepage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#top">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Xingyu Song homepage">
-        <span class="brand-mark">XS</span>
         <span>Xingyu Song</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Toggle navigation</span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>Menu <span aria-hidden="true">+</span></button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
-        <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main id="top">
+    <main id="top" tabindex="-1">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">PhD Student · The University of Tokyo</p>
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PhD Student <span class="eyebrow-divider" aria-hidden="true">/</span> The University of Tokyo</p>
           <h1 id="hero-title">Xingyu Song</h1>
           <p class="hero-lede">
-            I study flow-based generative models and the deterministic and stochastic dynamics behind modern AI systems.
+            I study flow-based generative modeling theory and its applications.
           </p>
           <div class="hero-actions" aria-label="Profile links">
-            <button class="button primary email-copy" type="button" data-user="xsong" data-domain="g.ecc.u-tokyo.ac.jp" aria-label="Copy email address from hero">Email</button>
-            <a class="button" href="https://github.com/xingyu-song">GitHub</a>
-            <a class="button" href="https://scholar.google.com/citations?view_op=search_authors&mauthors=Xingyu+Song+University+of+Tokyo">Google Scholar</a>
-            <a class="button" href="files/Xingyu_Song_CV.pdf">CV</a>
+            <a class="button" href="https://github.com/xingyu-song">GitHub <span aria-hidden="true">↗</span></a>
+            <a class="button" href="https://scholar.google.com/citations?view_op=search_authors&mauthors=Xingyu+Song+University+of+Tokyo">Scholar <span aria-hidden="true">↗</span></a>
+            <a class="button" href="files/Xingyu_Song_CV.pdf">CV <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <aside class="profile-panel" aria-label="Profile summary">
+        <aside class="profile-panel" aria-label="Profile portrait">
           <div class="portrait-wrap">
-            <img class="portrait" src="https://github.com/xingyu-song.png" alt="Portrait of Xingyu Song">
-          </div>
-          <div>
-            <h2>RCAST AI Lab</h2>
-            <p>Department of Advanced Interdisciplinary Studies, Graduate School of Engineering, The University of Tokyo</p>
+            <img class="portrait" src="images/xingyu-song.jpg" alt="Xingyu Song in front of Mount Fuji" width="460" height="460" fetchpriority="high">
           </div>
         </aside>
       </section>
 
-      <section id="about" class="section two-column">
+      <section id="about" class="section two-column" aria-labelledby="about-title" tabindex="-1">
         <div>
-          <p class="section-kicker">About</p>
-          <h2>Building simple systems with subtle machinery.</h2>
+          <p class="section-kicker">01 / About</p>
+          <h2 id="about-title">A little background.</h2>
         </div>
         <div class="prose">
           <p>
@@ -75,175 +61,190 @@
         </div>
       </section>
 
-      <section id="research" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Research</p>
-          <h2>Current focus areas</h2>
-        </div>
-        <div class="focus-grid">
-          <article class="focus-card">
-            <span>01</span>
-            <h3>Generative Dynamics</h3>
-            <p>Flow-based generative modeling, probability transport, bridge matching, and stochastic process structure.</p>
-          </article>
-          <article class="focus-card">
-            <span>02</span>
-            <h3>Physical Simulation</h3>
-            <p>Training measures, multi-scale partitions, neural surrogates, and bias reduction for discretized simulations.</p>
-          </article>
-          <article class="focus-card">
-            <span>03</span>
-            <h3>Embodied Vision</h3>
-            <p>Action recognition, synthetic data generation, 3D pose representation, and game-engine-based augmentation.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="publications" class="section">
+      <section id="publications" class="section" aria-labelledby="publications-title" tabindex="-1">
         <div class="section-heading split">
           <div>
-            <p class="section-kicker">Publications</p>
-            <h2>Selected and recent work</h2>
+            <p class="section-kicker">02 / Publications</p>
+            <h2 id="publications-title">Selected &amp; recent work.</h2>
           </div>
-          <p>Grouped by research area, newest first within each section.</p>
+          <div class="publication-actions">
+            <a class="text-link" href="https://scholar.google.com/citations?view_op=search_authors&amp;mauthors=Xingyu+Song+University+of+Tokyo">Google Scholar <span aria-hidden="true">↗</span></a>
+            <button class="publication-toggle text-link" type="button" aria-expanded="true" aria-controls="publication-list" hidden>Hide publications <span aria-hidden="true">−</span></button>
+          </div>
         </div>
 
-        <div class="publication-group">
-          <h3>Generative Modeling & Physical Simulation</h3>
-          <ol class="publication-list">
+        <ol id="publication-list" class="publication-list" role="list">
             <li>
-              <a href="https://arxiv.org/search/?query=Deterministic+Decomposition+of+Stochastic+Generative+Dynamics&searchtype=title">Deterministic Decomposition of Stochastic Generative Dynamics</a>
-              <span><strong>Xingyu Song</strong>, Yuan Mei, Naoya Takeishi. arXiv preprint, 2026.</span>
-              <p>Decomposes generative drift into transport and osmotic components and introduces Bridge Matching for controllable sampling.</p>
+              <time class="publication-year" datetime="2026">2026</time>
+              <div class="publication-content">
+                <h4><a href="https://arxiv.org/search/?query=Deterministic+Decomposition+of+Stochastic+Generative+Dynamics&searchtype=title">Deterministic Decomposition of Stochastic Generative Dynamics<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors"><strong>Xingyu Song</strong>, Yuan Mei, Naoya Takeishi.</p>
+                <p class="publication-venue">arXiv preprint, 2026.</p>
+                <p class="publication-summary">Decomposes generative drift into transport and osmotic components and introduces Bridge Matching for controllable sampling.</p>
+              </div>
             </li>
             <li>
-              <a href="https://arxiv.org/search/?query=Reframing+Training+Measures+for+Discretized+Physical+Simulations&searchtype=title">M3: Reframing Training Measures for Discretized Physical Simulations</a>
-              <span>Yuan Mei, <strong>Xingyu Song</strong>, Xiaowen Song, Naoya Takeishi. arXiv preprint, 2026.</span>
-              <p>Balances supervision across multi-scale Morton partitions to reduce measure-induced bias in neural surrogate models.</p>
-            </li>
-          </ol>
-        </div>
-
-        <div class="publication-group">
-          <h3>Natural Language Processing</h3>
-          <ol class="publication-list">
-            <li>
-              <a href="https://aclanthology.org/2025.emnlp-main.202.pdf">ReAgent: Reversible Multi-Agent Reasoning for Knowledge-Enhanced Multi-Hop QA</a>
-              <span>Zhao Xinjie, Fan Gao, <strong>Xingyu Song</strong>, Yingjian Chen, Rui Yang, Yanran Fu, Yuyang Wang, Yusuke Iwasawa, Yutaka Matsuo, Irene Li. EMNLP, 2025.</span>
+              <time class="publication-year" datetime="2026">2026</time>
+              <div class="publication-content">
+                <h4><a href="https://arxiv.org/search/?query=Reframing+Training+Measures+for+Discretized+Physical+Simulations&searchtype=title">M3: Reframing Training Measures for Discretized Physical Simulations<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors">Yuan Mei, <strong>Xingyu Song</strong>, Xiaowen Song, Naoya Takeishi.</p>
+                <p class="publication-venue">arXiv preprint, 2026.</p>
+                <p class="publication-summary">Balances supervision across multi-scale Morton partitions to reduce measure-induced bias in neural surrogate models.</p>
+              </div>
             </li>
             <li>
-              <a href="https://aclanthology.org/2026.eacl-long.23/">JiraiBench: A Bilingual Benchmark for Evaluating Large Language Models' Detection of Human Risky Health Behavior Content in Jirai Community</a>
-              <span>Yunze Xiao, Tingyu He, Lionel Z. Wang, Yiming Ma, <strong>Xingyu Song</strong>, Xiaohang Xu, Mona T. Diab, Irene Li, Ka Chung Ng. EACL, 2026.</span>
+              <time class="publication-year" datetime="2026">2026</time>
+              <div class="publication-content">
+                <h4><a href="https://aclanthology.org/2026.eacl-long.23/">JiraiBench: A Bilingual Benchmark for Evaluating Large Language Models' Detection of Human Risky Health Behavior Content in Jirai Community<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors">Yunze Xiao, Tingyu He, Lionel Z. Wang, Yiming Ma, <strong>Xingyu Song</strong>, Xiaohang Xu, Mona T. Diab, Irene Li, Ka Chung Ng.</p>
+                <p class="publication-venue">EACL, 2026.</p>
+              </div>
             </li>
             <li>
-              <a href="https://arxiv.org/search/?query=Knowledge+Graph-Based+RAG+in+Japanese+Medical+Question+Answering&searchtype=title">Exploring the Role of Knowledge Graph-Based RAG in Japanese Medical Question Answering with Small-Scale LLMs</a>
-              <span>Yingjian Chen, Feiyang Li, <strong>Xingyu Song</strong>, Tianxiao Li, Zixin Xu, Xiujie Chen, Issey Sukeda, Irene Li. arXiv preprint, 2025.</span>
-            </li>
-          </ol>
-        </div>
-
-        <div class="publication-group">
-          <h3>Computer Vision & Action Recognition</h3>
-          <ol class="publication-list">
-            <li>
-              <a href="https://arxiv.org/abs/2404.06741">4A: An Animation-based Augmentation Approach for Action Recognition from Discontinuous Video</a>
-              <span><strong>Xingyu Song</strong>, Zhan Li, Shi Chen, Xin-Qiang Cai, Kazuyuki Demachi. ECAI, 2024 (Oral).</span>
+              <time class="publication-year" datetime="2026">2026</time>
+              <div class="publication-content">
+                <h4><a href="https://doi.org/10.1016/j.neucom.2025.130581">Advancement and Development of Graph-Based Reasoning Method for Human Malicious Behaviors Identification Based on Graph Contrastive Representation Learning<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors">Zhan Li, <strong>Xingyu Song</strong>, Shi Chen, Kazuyuki Demachi.</p>
+                <p class="publication-venue">Neurocomputing, 2026.</p>
+              </div>
             </li>
             <li>
-              <a href="https://arxiv.org/abs/2404.19279">Quater-GCN: Enhancing 3D Human Pose Estimation with Orientation and Semi-supervised Training</a>
-              <span><strong>Xingyu Song</strong>, Zhan Li, Shi Chen, Kazuyuki Demachi. ECAI, 2024 (Oral).</span>
+              <time class="publication-year" datetime="2025">2025</time>
+              <div class="publication-content">
+                <h4><a href="https://aclanthology.org/2025.emnlp-main.202.pdf">ReAgent: Reversible Multi-Agent Reasoning for Knowledge-Enhanced Multi-Hop QA<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors">Zhao Xinjie, Fan Gao, <strong>Xingyu Song</strong>, Yingjian Chen, Rui Yang, Yanran Fu, Yuyang Wang, Yusuke Iwasawa, Yutaka Matsuo, Irene Li.</p>
+                <p class="publication-venue">EMNLP, 2025.</p>
+              </div>
             </li>
             <li>
-              <a href="https://arxiv.org/abs/2401.13414">GTAutoAct: An Automatic Datasets Generation Framework Based on Game Engine Redevelopment for Action Recognition</a>
-              <span><strong>Xingyu Song</strong>, Zhan Li, Shi Chen, Kazuyuki Demachi. arXiv preprint, 2024.</span>
-            </li>
-          </ol>
-        </div>
-
-        <div class="publication-group">
-          <h3>Intelligent Surveillance & Security</h3>
-          <ol class="publication-list">
-            <li>
-              <a href="https://doi.org/10.1016/j.neucom.2025.130581">Advancement and Development of Graph-Based Reasoning Method for Human Malicious Behaviors Identification Based on Graph Contrastive Representation Learning</a>
-              <span>Zhan Li, <strong>Xingyu Song</strong>, Shi Chen, Kazuyuki Demachi. Neurocomputing, 2026.</span>
+              <time class="publication-year" datetime="2025">2025</time>
+              <div class="publication-content">
+                <h4><a href="https://arxiv.org/search/?query=Knowledge+Graph-Based+RAG+in+Japanese+Medical+Question+Answering&searchtype=title">Exploring the Role of Knowledge Graph-Based RAG in Japanese Medical Question Answering with Small-Scale LLMs<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors">Yingjian Chen, Feiyang Li, <strong>Xingyu Song</strong>, Tianxiao Li, Zixin Xu, Xiujie Chen, Issey Sukeda, Irene Li.</p>
+                <p class="publication-venue">arXiv preprint, 2025.</p>
+              </div>
             </li>
             <li>
-              <a href="https://www.sciencedirect.com/science/article/pii/S0045790624006602">Armed Boundary Sabotage: A Case Study of Human Malicious Behaviors Identification with Computer Vision and Explainable Reasoning Methods</a>
-              <span>Zhan Li, <strong>Xingyu Song</strong>, Shi Chen, Kazuyuki Demachi. Computers and Electrical Engineering, 121, 109924, 2025.</span>
+              <time class="publication-year" datetime="2025">2025</time>
+              <div class="publication-content">
+                <h4><a href="https://www.sciencedirect.com/science/article/pii/S0045790624006602">Armed Boundary Sabotage: A Case Study of Human Malicious Behaviors Identification with Computer Vision and Explainable Reasoning Methods<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors">Zhan Li, <strong>Xingyu Song</strong>, Shi Chen, Kazuyuki Demachi.</p>
+                <p class="publication-venue">Computers and Electrical Engineering, 121, 109924, 2025.</p>
+              </div>
             </li>
             <li>
-              <a href="https://www.sciencedirect.com/science/article/pii/S1738573324006094">Abnormal Detection in Nuclear Security Videos Based on Label-Specific Autoencoders and Reconstruction Errors Comparison</a>
-              <span>Zhan Li, <strong>Xingyu Song</strong>, Shi Chen, Kazuyuki Demachi. Nuclear Engineering and Technology, 57(3), 103239, 2025.</span>
+              <time class="publication-year" datetime="2025">2025</time>
+              <div class="publication-content">
+                <h4><a href="https://www.sciencedirect.com/science/article/pii/S1738573324006094">Abnormal Detection in Nuclear Security Videos Based on Label-Specific Autoencoders and Reconstruction Errors Comparison<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors">Zhan Li, <strong>Xingyu Song</strong>, Shi Chen, Kazuyuki Demachi.</p>
+                <p class="publication-venue">Nuclear Engineering and Technology, 57(3), 103239, 2025.</p>
+              </div>
             </li>
             <li>
-              <a href="https://www.sciencedirect.com/science/article/pii/S0957417423018697">Data, Language and Graph-Based Reasoning Methods for Identification of Human Malicious Behaviors in Nuclear Security</a>
-              <span>Zhan Li, <strong>Xingyu Song</strong>, Shi Chen, Kazuyuki Demachi. Expert Systems with Applications, 236, 121367, 2024.</span>
+              <time class="publication-year" datetime="2024">2024</time>
+              <div class="publication-content">
+                <h4><a href="https://arxiv.org/abs/2404.06741">4A: An Animation-based Augmentation Approach for Action Recognition from Discontinuous Video<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors"><strong>Xingyu Song</strong>, Zhan Li, Shi Chen, Xin-Qiang Cai, Kazuyuki Demachi.</p>
+                <p class="publication-venue">ECAI, 2024 (Oral).</p>
+              </div>
             </li>
             <li>
-              <a href="https://resources.inmm.org/sites/default/files/2023-07/finalpaper_223_0418062326.pdf">Game Engine Based Data Augmentation with In-game Customization and Modeling for Malicious Behaviors Identification in Nuclear Security</a>
-              <span><strong>Xingyu Song</strong>, Zhan Li, Shi Chen, Kazuyuki Demachi. INMM/ESARDA Joint Annual Meeting, 2023.</span>
+              <time class="publication-year" datetime="2024">2024</time>
+              <div class="publication-content">
+                <h4><a href="https://arxiv.org/abs/2404.19279">Quater-GCN: Enhancing 3D Human Pose Estimation with Orientation and Semi-supervised Training<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors"><strong>Xingyu Song</strong>, Zhan Li, Shi Chen, Kazuyuki Demachi.</p>
+                <p class="publication-venue">ECAI, 2024 (Oral).</p>
+              </div>
             </li>
             <li>
-              <a href="https://resources.inmm.org/sites/default/files/2023-07/finalpaper_220_0425010228.pdf">Malicious Behaviors Identification in Nuclear Security Based on Visual Relationships Extraction and Knowledge Reasoning</a>
-              <span>Zhan Li, <strong>Xingyu Song</strong>, Shi Chen, Kazuyuki Demachi. INMM/ESARDA Joint Annual Meeting, 2023.</span>
+              <time class="publication-year" datetime="2024">2024</time>
+              <div class="publication-content">
+                <h4><a href="https://arxiv.org/abs/2401.13414">GTAutoAct: An Automatic Datasets Generation Framework Based on Game Engine Redevelopment for Action Recognition<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors"><strong>Xingyu Song</strong>, Zhan Li, Shi Chen, Kazuyuki Demachi.</p>
+                <p class="publication-venue">arXiv preprint, 2024.</p>
+              </div>
             </li>
-          </ol>
-        </div>
+            <li>
+              <time class="publication-year" datetime="2024">2024</time>
+              <div class="publication-content">
+                <h4><a href="https://www.sciencedirect.com/science/article/pii/S0957417423018697">Data, Language and Graph-Based Reasoning Methods for Identification of Human Malicious Behaviors in Nuclear Security<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors">Zhan Li, <strong>Xingyu Song</strong>, Shi Chen, Kazuyuki Demachi.</p>
+                <p class="publication-venue">Expert Systems with Applications, 236, 121367, 2024.</p>
+              </div>
+            </li>
+            <li>
+              <time class="publication-year" datetime="2023">2023</time>
+              <div class="publication-content">
+                <h4><a href="https://resources.inmm.org/sites/default/files/2023-07/finalpaper_223_0418062326.pdf">Game Engine Based Data Augmentation with In-game Customization and Modeling for Malicious Behaviors Identification in Nuclear Security<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors"><strong>Xingyu Song</strong>, Zhan Li, Shi Chen, Kazuyuki Demachi.</p>
+                <p class="publication-venue">INMM/ESARDA Joint Annual Meeting, 2023.</p>
+              </div>
+            </li>
+            <li>
+              <time class="publication-year" datetime="2023">2023</time>
+              <div class="publication-content">
+                <h4><a href="https://resources.inmm.org/sites/default/files/2023-07/finalpaper_220_0425010228.pdf">Malicious Behaviors Identification in Nuclear Security Based on Visual Relationships Extraction and Knowledge Reasoning<span class="paper-arrow" aria-hidden="true">↗</span></a></h4>
+                <p class="publication-authors">Zhan Li, <strong>Xingyu Song</strong>, Shi Chen, Kazuyuki Demachi.</p>
+                <p class="publication-venue">INMM/ESARDA Joint Annual Meeting, 2023.</p>
+              </div>
+            </li>
+        </ol>
       </section>
 
-      <section id="experience" class="section resume-grid">
+      <section id="experience" class="section resume-grid" aria-labelledby="experience-title" tabindex="-1">
         <div>
-          <p class="section-kicker">CV</p>
-          <h2>Education, honors, and internships</h2>
+          <p class="section-kicker">03 / Experience</p>
+          <h2 id="experience-title">Along the way.</h2>
         </div>
         <div class="timeline-wrap">
           <section class="timeline-section" aria-labelledby="education-title">
             <h3 id="education-title">Education</h3>
-            <ol class="timeline">
-              <li><time>2025 - Present</time><span>PhD, Graduate School of Engineering, The University of Tokyo.</span></li>
-              <li><time>2022 - 2024</time><span>M.Eng., Graduate School of Engineering, The University of Tokyo.</span></li>
-              <li><time>2021 - 2022</time><span>Research Student, School of Fundamental Science and Engineering, Waseda University.</span></li>
-              <li><time>2017 - 2021</time><span>B.Sc., College of Hongshen / College of Computer Science, Chongqing University.</span></li>
+            <ol class="timeline" role="list">
+              <li><span class="timeline-date">2025 - Present</span><span>PhD, Graduate School of Engineering, The University of Tokyo.</span></li>
+              <li><span class="timeline-date">2022 - 2024</span><span>M.Eng., Graduate School of Engineering, The University of Tokyo.</span></li>
+              <li><span class="timeline-date">2021 - 2022</span><span>Research Student, School of Fundamental Science and Engineering, Waseda University.</span></li>
+              <li><span class="timeline-date">2017 - 2021</span><span>B.Sc., College of Hongshen / College of Computer Science, Chongqing University.</span></li>
             </ol>
           </section>
           <section class="timeline-section" aria-labelledby="honors-title">
             <h3 id="honors-title">Honors and Awards</h3>
-            <ol class="timeline">
-              <li><time>2025</time><span>SPRING GX Fellowship, The University of Tokyo.</span></li>
+            <ol class="timeline" role="list">
+              <li><span class="timeline-date">2025</span><span>SPRING GX Fellowship, The University of Tokyo.</span></li>
             </ol>
           </section>
           <section class="timeline-section" aria-labelledby="internships-title">
             <h3 id="internships-title">Internships</h3>
-            <ol class="timeline">
-              <li><time>2020.06 - 2020.08</time><span>Sichuan Hwadee Information Technology Co., Ltd, Chengdu, China.</span></li>
-              <li><time>2019.01 - 2019.03</time><span>National Key Laboratory of Software Development Environment, Beihang University, Beijing, China. Supervised by Prof. Zhiming Zheng.</span></li>
-              <li><time>2018.07 - 2018.09</time><span>ChinaSoft International, Chongqing, China. <a href="https://github.com/CQUHub/CQUHub">CQUHub</a>.</span></li>
+            <ol class="timeline" role="list">
+              <li><span class="timeline-date">2020.06 - 2020.08</span><span>Sichuan Hwadee Information Technology Co., Ltd, Chengdu, China.</span></li>
+              <li><span class="timeline-date">2019.01 - 2019.03</span><span>National Key Laboratory of Software Development Environment, Beihang University, Beijing, China. Supervised by Prof. Zhiming Zheng.</span></li>
+              <li><span class="timeline-date">2018.07 - 2018.09</span><span>ChinaSoft International, Chongqing, China. <a href="https://github.com/CQUHub/CQUHub">CQUHub</a>.</span></li>
             </ol>
           </section>
         </div>
       </section>
 
-      <section id="contact" class="contact-band" aria-labelledby="contact-title">
+      <section id="contact" class="contact-band" aria-labelledby="contact-title" tabindex="-1">
         <div>
-          <p class="section-kicker">Contact</p>
-          <h2 id="contact-title">Open to research conversations and collaborations.</h2>
+          <p class="section-kicker">04 / Contact</p>
+          <h2 id="contact-title">Let’s exchange ideas.</h2>
+          <p class="contact-intro">Open to research conversations and collaborations.</p>
         </div>
         <div class="contact-links">
-          <button class="contact-copy" type="button" data-user="xsong" data-domain="g.ecc.u-tokyo.ac.jp" aria-label="Copy email address">
+          <button class="contact-copy" type="button" data-user="xsong" data-domain="g.ecc.u-tokyo.ac.jp" aria-label="Copy email address" hidden>
             <span>xsong [at] g.ecc.u-tokyo.ac.jp</span>
-            <small aria-live="polite">Copy</small>
+            <small>Copy <span aria-hidden="true">↗</span></small>
           </button>
-          <a href="https://github.com/xingyu-song">github.com/xingyu-song</a>
-          <a href="https://scholar.google.com/citations?view_op=search_authors&mauthors=Xingyu+Song+University+of+Tokyo">Google Scholar profile</a>
+          <noscript><p>xsong [at] g.ecc.u-tokyo.ac.jp</p></noscript>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> Xingyu Song. Built as a clear, lightweight academic homepage.</p>
-      <a href="#top">Back to top</a>
+      <p>© <span id="year">2026</span> Xingyu Song</p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
     </footer>
 
+    <p class="copy-status" role="status" aria-live="polite"></p>
     <script src="script.js"></script>
   </body>
 </html>
