@@ -27,6 +27,19 @@ if (navToggle && nav) {
 const year = document.querySelector("#year");
 if (year) year.textContent = String(new Date().getFullYear());
 
+const publicationToggle = document.querySelector(".publication-toggle");
+const publicationList = document.querySelector("#publication-list");
+if (publicationToggle && publicationList) {
+  publicationToggle.hidden = false;
+  publicationToggle.addEventListener("click", () => {
+    publicationList.hidden = !publicationList.hidden;
+    const expanded = !publicationList.hidden;
+    publicationToggle.setAttribute("aria-expanded", String(expanded));
+    publicationToggle.firstChild.textContent = expanded ? "Hide publications " : "Show publications ";
+    publicationToggle.querySelector("span").textContent = expanded ? "−" : "+";
+  });
+}
+
 const copyText = async (text) => {
   if (navigator.clipboard?.writeText) {
     try {
